@@ -1,14 +1,19 @@
-package com.example.udemydemo.ui
+package com.example.myapplication.ui
 
 import androidx.compose.runtime.Composable
 import androidx.lifecycle.viewmodel.compose.viewModel
-import androidx.navigation.NavType
-import androidx.navigation.compose.*
-import com.example.udemydemo.library.LibraryHomeScreen
-import com.example.udemydemo.library.BookListScreen
-import com.example.udemydemo.library.StudentListScreen
-import com.example.udemydemo.library.ManageScreen
-import com.example.udemydemo.dataflow.*
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+import androidx.navigation.compose.rememberNavController
+import com.example.myapplication.ui.screens.BookListScreen
+import com.example.myapplication.ui.screens.ConfirmScreen
+import com.example.myapplication.ui.screens.ForgotEmailScreen
+import com.example.myapplication.ui.screens.ForgotViewModel
+import com.example.myapplication.ui.screens.LibraryHomeScreen
+import com.example.myapplication.ui.screens.ManageScreen
+import com.example.myapplication.ui.screens.ResetPasswordScreen
+import com.example.myapplication.ui.screens.StudentListScreen
+import com.example.myapplication.ui.screens.VerifyCodeScreen
 
 @Composable
 fun AppNavHost() {
